@@ -11,13 +11,10 @@
 name: Build ImmortalWrt R1S_H5-K5.4
 
 on:
-  repository_dispatch:
-  workflow_dispatch:
-    inputs:
-      ssh:
-        description: 'SSH connection to Actions'
-        required: false
-        default: 'false'
+  push:
+    branches: [ main ]
+    paths:
+      - '.github/workflows/r1s_h5_k54.yml'
   schedule:
     - cron: '50 01 * * *'  
 
