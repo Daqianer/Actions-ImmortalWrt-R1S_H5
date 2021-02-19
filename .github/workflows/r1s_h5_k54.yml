@@ -16,7 +16,7 @@ on:
     paths:
       - '.github/workflows/r1s_h5_k54.yml'
   schedule:
-    - cron: '50 01 * * *'  
+    - cron: '49 01 * * *'  
 
 env:
   REPO_URL: https://github.com/immortalwrt/immortalwrt
